@@ -27,9 +27,9 @@ class QLearningAgent:
         self.gamma = gamma
 
         self.epsilon_start = epsilon_start
-        self.epsilon = 0.2 if self.epsilon_decay_type == "constant" else self.epsilon_start
         self.epsilon_min = epsilon_min
         self.epsilon_decay_type = epsilon_decay_type
+        self.epsilon = 0.2 if self.epsilon_decay_type == "constant" else self.epsilon_start
         self.epsilon_linear_decay_steps = epsilon_linear_decay_steps
         self.epsilon_exp_decay_rate = epsilon_exp_decay_rate
 
